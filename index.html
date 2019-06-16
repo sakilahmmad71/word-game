@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>word play games</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body class="bg-danger">
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <h1 class="navbar-brand m-auto" href="#">WordBeater</h1>
+          </nav>
+    </header>
+    <main>
+        <div class="row">
+                <div class=" col col-md-6 mx-auto">
+                    <h6 class="text-light text-center pt-3">Type the given word within <span id="seconds" class="text-success">0</span> seconds</h6>
+                    <div class="display-3 text-light text-center" id="current-word">words here</div><br>
+                    <input class="form-control" id="word-input" name="inputWord" placeholder="Start Typing..." autofocus autocomplete="off">
+                    <h4 class="text-center text-light" id="message"></h4><br>
+                    <div class="">
+                        <h4 class="text-light float-left mr-5">Time Left : <span class="text-info" id="time">0</span></h4>
+                        <h4 class=" text-light float-roght  text-center">Score : <span class="text-info" id="score">0</span></h4>
+                    </div><br>
+                    <div class="jumbotron bg-dark">
+                        <h4 class="text-light text-center">Instructions</h4>
+                        <p class="text-light px-1">Type each word in the given amount of second to score. To play again just type the correct word. Score will reset.</p>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
